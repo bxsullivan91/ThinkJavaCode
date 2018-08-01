@@ -13,7 +13,6 @@ public class GreatestNumber
         int numberOfGuesses;
         numberOfGuesses = guessNumber();
 
-
         System.out.println("Congrats, " + yourName + "!!!");
 
         playAgain();
@@ -30,6 +29,7 @@ public class GreatestNumber
 
         int random = randomNumber.nextInt(100) + 1;
         int guesses = 0;
+        int totalGuess = 0;
 
         while (random != yourGuess)
         {
@@ -46,13 +46,13 @@ public class GreatestNumber
             System.out.print("Please Guess Again: ");
             yourGuess = input.nextInt();
             guesses++;
+            totalGuess = totalGuess + guesses;
 
         }
-        if (random == yourGuess)
-        {
-            System.out.println("You are correct");
-            guesses++;
-        }
+
+        System.out.println("You are correct");
+        guesses++;
+
 
         System.out.println("You guessed " + guesses + " times!");
 
