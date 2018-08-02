@@ -27,10 +27,9 @@ public class PetNames
         }
 
         System.out.println("Your pets name's are: ");
-        int order = 0;
+
         for (int j = 0; j < petNames.length; j++)
         {
-            order = j;
             System.out.println(j + " " + petNames[j]);
         }
     }
