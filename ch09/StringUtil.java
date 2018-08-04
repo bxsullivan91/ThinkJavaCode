@@ -84,10 +84,10 @@ public class StringUtil
         System.out.println("Area Code: \t" + areaCode);
 
         String exchange = number.substring(4, 7);
-        System.out.println("Area Code: \t" + exchange);
+        System.out.println("Exchange: \t" + exchange);
 
         String lineNumber = number.substring(8);
-        System.out.println("Area Code: \t" + lineNumber);
+        System.out.println("Line Number: \t" + lineNumber);
     }
 
     public static int findFirstE(String wordGiven)
